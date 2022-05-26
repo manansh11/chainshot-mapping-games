@@ -7,6 +7,10 @@ describe("Game2", function() {
     await game.deployed();
 
     // press all the right switches to win this stage
+    await game.switchOn(20);
+    await game.switchOn(47);
+    await game.switchOn(212);
+
 
     await game.win();
 
